@@ -1,0 +1,237 @@
+*{margin: 0; padding: 0;}
+:root{
+  --color-2:red;
+}
+
+
+header{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to left , black 80%,red 20%);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+ 
+.navsection{
+  width: 100% ; height: 20vh;
+  display: flex; justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to top,white 80%, red 20%);
+  font-style: italic;
+}
+.logo{ 
+  width: 40%;
+  background-image: linear-gradient(red 40%,red 60%);
+  padding-left: 100px;
+  box-sizing: border-box;
+  animation: uppernicche 2s linear infinite ;
+  animation-direction: alternate;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+@keyframes uppernicche {
+  from {padding-top: 5px;}
+  to {padding-bottom: 5px;}
+}
+.logo h1{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  animation: aagepiche 2s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes aagepiche {
+  from{padding-left: 150px;};
+  to {padding-right: 400px;}
+  }
+nav{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+nav a{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #000;
+  font-weight: 900;
+  font-size: 17px;
+  position: relative;
+}
+
+nav a:first-child{
+  color: red;
+}
+
+nav a::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid  red /*#red*/;
+  transition: all .3s linear;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+
+main{
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.leftside{
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.leftside h3{
+  font-size: 40px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 4%;
+}
+
+.leftside h3::after{
+  content: "";
+  width: 300px;
+  height: 3px;
+  position: absolute;
+  top: 43%;
+  left: 35.5%;
+  background:#fff;
+  /* padding-left: 53px; */
+  box-sizing: border-box;
+}
+
+.leftside h1{
+  margin-top: 20px;
+  font-size: 50px;
+  margin-bottom: 25px;
+  padding-left: 23px;
+}
+
+.leftside h2{
+  text-decoration: none;
+  margin-bottom: 35px;
+  font-weight: 100;
+  word-spacing: 4px;
+  padding-left: 40%;
+  color: orangered;
+}
+
+.leftside h2 a{
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.leftside a:hover{
+  color: red;
+  text-decoration: none;
+  /* font-style: italic; */
+}
+
+/*.leftside a{
+  color: purple;
+}*/
+
+.leftside .btn{
+  text-decoration: none;
+  font-weight:900 ;
+  font-size: 14px;
+  text-align: center;
+  padding: 12px 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 25px;
+  display: inline-block;
+  margin-right: 50px;
+  color: #fff;
+  letter-spacing: 0;
+  background: red;
+  border: double 2px transparent;
+  box-shadow: 0 10px 30px rgba(118, 85,225,.3)       
+}
+
+.leftside .btn:hover{
+  border: 2px solid red;
+  color: #222;
+  background-color: #fff;
+  box-shadow: none;
+  background-image: none ;
+}
+
+.leftside h2{
+  animation: deleting 0.6s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes deleting{
+  from{color: rgb(252, 67, 0);}
+  to {color: rgb(255, 183, 49);}
+}
+
+.rightside img{
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px gray;
+}
+
+.hiddengameryt{
+  color: aqua;
+}
+
+
+.contacticons a{
+  text-decoration: none;
+  font-weight:900 ;
+  font-size: 14px;
+  text-align: center;
+  margin-right: 100%;
+  padding: 12px 25px;
+  margin-bottom: 10%;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right: 50px;
+  color: #fff;
+  letter-spacing: 0;
+  background: red;
+  border: double 2px transparent;
+  box-shadow: 0 10px 30px rgba(118, 85,225,.3) ;
+}
+
+.contacticons a:hover{
+  border: 2px solid red;
+  color: #222;
+  background-color: #fff;
+  background-image: none ;
+}
+
+.contacticons{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /*margin-right: 110px;*/
+}
+
+.fullowuson{
+  color: #000;
+  margin-bottom: 2%;
+  size: 92px;
+  text-transform: uppercase;
+  text-decoration: dotted;
+  text-align: center;
+  margin-right: 9%;
+  margin-top: -110px;
+}
+
+
+h1,h3 {
+  color: white;
+}
